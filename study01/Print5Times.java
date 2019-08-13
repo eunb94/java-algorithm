@@ -1,4 +1,4 @@
-package step1;
+package study01;
 import java.util.Scanner;
 public class Print5Times {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Print5Times {
 		
 
 		while(true) {
-			System.out.println("진행 1, 스톱 0");
+			System.out.println("0.종료, 1.계산기, 2.달력");
 			int flag = scanner.nextInt();
 			switch(flag) {
 			case 0 : 

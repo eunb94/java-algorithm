@@ -8,7 +8,7 @@ public class IntArray {
 		int[] scores = new int[5];
 		for(int i=0; i < subjects.length; i++) {
 			System.out.printf("%s 점수를 입력하세요. \n", subjects[i]);
-			scores [1] = scanner.nextInt();
+			scores [i] = scanner.nextInt();
 		}
 		for(int i=0; i<scores.length; i++) {
 			System.out.printf("%s 점수 %d \n", subjects[i], scores[i]);}

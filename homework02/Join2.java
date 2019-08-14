@@ -4,28 +4,17 @@ public class Join2 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String id, pas, name, birth, adu, hei, wei, bld = "";
-		System.out.println("===회원가입===");
-		System.out.println("아이디 : ");
-		id = scanner.next();
-		System.out.println("비밀번호 : ");
-		pas = scanner.next();
-		System.out.println("이름 : ");
-		name = scanner.next();
-		System.out.println("생년월일(예) 1980-01-01 : ");
-		birth = scanner.next();
-		System.out.println("성인여부(성인 true, 미성년 false : ");
-		adu = scanner.next();
-		System.out.println("키(소수점 첫째자리까지 : ");
-		hei = scanner.next();
-		System.out.println("몸무게(소수점 첫째자리까지 : ");
-		wei = scanner.next();
-		System.out.println("혈액형(A) : ");
-		bld = scanner.next();
-		
 		System.out.println("===회원정보===");
-		System.out.println("아이디 : "+ id);
-
-	}
-
+		String[] infos = {"아이디", "비밀번호", "이름", "생년월일(예)1980-01-01", "성인여부(성인true,미성년false)", "키(소수점 첫째자리까지)", "몸무게(소수점 첫째자리까지)", "혈액형(A)"};
+		String[] ans = new String[8];
+		for(int i=0; i < infos.length; i++); {
+			System.out.printf("%s 정보를 입력하세요. \n", ans);
+			ans[i] = scanner.next();
+		}
+		
+		
+			 
+		
+			
+		}
 }

@@ -12,20 +12,17 @@ public class Timecalc {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("초 값을 입력하세요. [  ]");
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		
-		SimpleDateFormat sdf2 = new SimpleDateFormat("HH-MM-SS");
-		System.out.println(date);
-		String result = sdf2.format(date);
-		String res = result.substring(6,8);
-		System.out.println(res);
-		String sec = "";
-		sec = scanner.next();
-		int time, time2 = 0;
-		String result1 = "";
-
+		int sec =0; 
+	 	int min =0; 
+	 	int hour =0; 
+	 	while(true) { 
+				System.out.println("계산할 시간을 입력해주세요."); 
+				int time = scanner.nextInt(); 
+					hour = time/3600; 
+					min = (time%3600)/60; 
+		 			sec = time%60; 
+					System.out.println(String.format("%d시 %d분 %d초 입니다.",hour,min,sec)); 
+		 		} 
 
 	}
 
